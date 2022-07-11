@@ -1,0 +1,36 @@
+.hero {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/hero.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero .hero-cont {
+    width: 100%;
+    max-width: 1280px;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero .hero-cont h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.hero .hero-cont p {
+    font-size: 1.8rem;
+    color: #fff;
+}

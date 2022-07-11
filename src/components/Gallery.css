@@ -1,0 +1,14 @@
+.gallery {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.gallery .gallery-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 3rem 0;
+}

@@ -1,0 +1,30 @@
+.main-image {
+    width: 100%;
+    height: 50vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../assets/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+
+.main-image .main-image-cont {
+    width: 100%;
+    max-width: 1280px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0 10px;
+    text-align: center;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.main-image .main-image-cont h2 {
+    color: #fff;
+    font-size: 3rem;
+    border-bottom: 3px solid #fff;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}

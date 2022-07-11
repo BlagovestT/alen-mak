@@ -1,0 +1,221 @@
+.about-us {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.about-us-hero{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.about-us-hero:after {
+    content: '';
+    height: 1200px;
+    width: 1200px;
+    background-color: #1C3E90;
+    position: absolute;
+    z-index: -1;
+    border-radius: 1200px;
+    right: -600px;
+    top: -80px;
+    animation-name: slideIn;
+    animation-duration: 1.5s;
+}
+
+.content-contain {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.imgBox {
+    background: url(../assets/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    height: 80vh; 
+    width: 700px; 
+    right: calc(calc(100vw - 1200px) / 2);
+    animation-name: shrink;
+    animation-duration: 1.5s;
+}
+
+@media (max-width: 1210px) {
+    .about-us-hero:after {
+        content: '';
+        height: 1200px;
+        width: 1200px;
+        background-color: #fff;
+        position: absolute;
+        z-index: -1;
+        border-radius: 1200px;
+        right: -600px;
+        top: -80px;
+        animation: none;
+    }
+
+    .content-contain {
+        padding-top: 20rem;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .imgBox {
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 50vh;
+        animation: none;
+    }
+}
+
+
+@media (max-width: 1210px) {
+    .title-box {
+        padding-top: 5rem;
+    }
+}
+
+.desc-title {
+    font-size: 2rem;
+}
+
+.main-title {
+    font-size: 5rem;
+}
+
+.linkz {
+    font-size: 1.2rem;
+}
+
+@media (max-width: 450px) {
+    .desc-title {
+        font-size: 1.5rem;
+    }
+    
+    .main-title {
+        font-size: 3rem;
+    }
+    
+    .linkz {
+        font-size: 1.1rem;
+    }
+
+    .content-contain {
+        padding-top: 16rem;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@keyframes slideUp {
+    0%{height: 0vh; }
+    50% {height: 100vh; bottom:0;}
+    100% {bottom: 100vh;}
+}
+
+@keyframes slideUp2 {
+    0%{height: 100vh; } 
+    50% {height: 100vh; bottom:0;}
+    100% {bottom: 100vh;}
+}
+
+@keyframes slideIn {
+    0%{right: -800px; }
+    50%{right: -800px; }
+    100% {right: -600px;}
+}
+
+@keyframes shrink {
+    0% {height: 100vh; width: 50vw; right: 0;}
+    55%  {height: 100vh; width: 50vw; right: 0;}
+    100% {height: 80vh; width: 700px; right: calc(calc(100vw - 1200px) / 2);}
+}
+
+/* About Us Info */
+.about-us-info {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 8rem 0;
+    overflow: hidden;
+}
+
+.about-us-info .about-us-img img {
+    width: 800px;
+    height: auto;
+}
+
+.about-us-info .about-us-cont {
+    width: 100%;
+    height: 400px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 5rem;
+    text-align: left;
+    justify-content: center;
+    transform: translateX(-150px);
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+}
+
+.about-us-info .about-us-cont h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.about-us-info .about-us-cont p {
+    line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 1250px) {
+    .about-us-info {
+        margin: 2rem 0;
+    }
+
+    .about-us-info .about-us-img img {
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    .about-us-info {
+        display: block;
+    }
+
+    .about-us-info .about-us-cont {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        transform: translateY(-100px);
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) {
+    .about-us-info .about-us-cont {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .about-us-info .about-us-cont {
+        width: 95%;
+    }
+}

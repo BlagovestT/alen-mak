@@ -1,0 +1,65 @@
+.home-about {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+}
+
+.home-about .home-about-cont {
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 800px;
+}
+
+.home-about .home-about-cont h2 {
+    font-size: 2.5rem;    
+}
+
+.home-about .home-about-cont p {
+    font-size: 1.4rem;
+    margin: 2rem 0 5rem 0;
+}
+
+.home-about .home-about-cont button {
+    padding: 12px 36px;
+}
+
+@media (max-width:1823px) {
+    .home-about {
+        gap: 4rem;
+        padding: 4rem 0rem;
+    }
+
+    .home-about .home-about-cont {
+       max-width: 100%;
+       text-align: center;
+    }
+    
+    .home-about-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .home-about-img img {
+        margin: 0 auto;
+    }
+
+}
+
+@media (max-width: 600px) {
+    .home-about .home-about-cont h2 {
+        font-size: 2rem;    
+    }
+    
+    .home-about .home-about-cont p {
+        font-size: 1.1rem;
+    }
+}
+
+
