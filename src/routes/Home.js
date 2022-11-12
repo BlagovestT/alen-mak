@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react';
 
-import Navbar from "../components/Navbar";
-import HeroImage from "../components/HeroImage";
-import HomeAbout from "../components/HomeAbout";
-import Services from "../components/Services";
-import Map from "../components/Map";
-import Footer from "../components/Footer";
+import Navbar from '../components/Navbar';
+import HeroImage from '../components/Home/HeroImage';
+import HomeAbout from '../components/Home/HomeAbout';
+import CountLine from '../components/Home/CountLine';
+// import Services from '../components/Home/Services';
+import Map from '../components/Map';
+import Footer from '../components/Footer';
 
 const Home = () => {
   return (
@@ -13,7 +14,8 @@ const Home = () => {
       <Navbar />
       <HeroImage />
       <HomeAbout />
-      <Services />
+      <CountLine />
+      {/* <Services /> */}
       <Map />
       <Footer />
     </>
