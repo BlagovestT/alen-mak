@@ -1,0 +1,35 @@
+.hospice-services{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 6rem 10px;
+    gap: 4rem;
+}
+
+.hospice-services .hospice-services-left h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    margin-bottom: 2rem;
+}
+
+.hospice-services .hospice-services-left img {
+    width: auto;
+    height: 400px;
+}
+
+.hospice-services .hospice-services-right .hospice-services-box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    border-top: 1px solid #283635;
+    border-bottom: 1px solid #283635;
+    padding: 3rem 4rem 3rem 0rem;
+}
+
+.hospice-services .hospice-services-right .hospice-services-box p {
+    font-size: 1.5rem;
+}
