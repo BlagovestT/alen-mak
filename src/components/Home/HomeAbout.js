@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { scrollTop } from '../../utils/scrollTop';
 
 import homeAbout from '../../assets/home-about.jpg';
 
@@ -27,7 +28,7 @@ const HomeAbout = () => {
         <button className='btn'>Научи повече</button>
       </div>
       <div className='home-about-right'>
-        <Link to='/accommodation'>
+        <Link to='/accommodation' onClick={scrollTop}>
           <div>
             <img src={homeAbout} alt=''></img>
             <h4>Единична стая</h4>
@@ -35,13 +36,13 @@ const HomeAbout = () => {
         </Link>
 
         <div>
-          <Link to='/accommodation'>
+          <Link to='/accommodation' onClick={scrollTop}>
             <img src={homeAbout} alt=''></img>
             <h4>Двойна стая</h4>
           </Link>
         </div>
 
-        <Link to='/accommodation'>
+        <Link to='/accommodation' onClick={scrollTop}>
           <div>
             <img src={homeAbout} alt=''></img>
             <h4>Тройна стая</h4>

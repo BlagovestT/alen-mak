@@ -28,12 +28,22 @@
 }
 
 .hero .hero-cont h2 {
-    font-size: 4rem;
+    font-size: 6rem;
     margin-bottom: 2rem;
     color: #fff;
 }
 
 .hero .hero-cont p {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: #fff;
+}
+
+.hero .hero-cont a .btn {
+    margin: 2rem 0;
+}
+
+.hero .hero-cont a .btn:hover {
+    color: #fff !important;
+    background-color: var(--clay);
+    transform: translateY(-5px);
 }

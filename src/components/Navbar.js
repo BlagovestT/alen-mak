@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { scrollTop } from '../utils/scrollTop';
 
 import './Navbar.css';
 
@@ -40,19 +41,29 @@ const Navbar = () => {
 
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li>
-          <Link to='/'>Начало</Link>
+          <Link to='/' onClick={scrollTop}>
+            Начало
+          </Link>
         </li>
         <li>
-          <Link to='/about'>За Нас</Link>
+          <Link to='/about' onClick={scrollTop}>
+            За Нас
+          </Link>
         </li>
         <li>
-          <Link to='/accommodation'>Настаняване</Link>
+          <Link to='/accommodation' onClick={scrollTop}>
+            Настаняване
+          </Link>
         </li>
         <li>
-          <Link to='/gallery'>Галерия</Link>
+          <Link to='/gallery' onClick={scrollTop}>
+            Галерия
+          </Link>
         </li>
         <li>
-          <Link to='/contact'>Контакти</Link>
+          <Link to='/contact' onClick={scrollTop}>
+            Контакти
+          </Link>
         </li>
       </ul>
 

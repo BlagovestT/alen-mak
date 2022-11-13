@@ -12,7 +12,13 @@ import homeAbout from '../../assets/home-about.jpg';
 
 import './Room.css';
 
-const Room = ({ title = '', location = '', contains = [], align = '' }) => {
+const Room = ({
+  title = '',
+  location = '',
+  contains = [],
+  images = [],
+  align = '',
+}) => {
   // Check if reversed
   if (align === 'reverse') {
     return (
@@ -45,17 +51,11 @@ const Room = ({ title = '', location = '', contains = [], align = '' }) => {
             slidesPerView={1}
             loop
           >
-            <SwiperSlide className='room-slide'>
-              <img src={homeAbout} alt='' />
-            </SwiperSlide>
-
-            <SwiperSlide className='room-slide'>
-              <img src={homeAbout} alt='' />
-            </SwiperSlide>
-
-            <SwiperSlide className='room-slide'>
-              <img src={homeAbout} alt='' />
-            </SwiperSlide>
+            {images.map((image) => (
+              <SwiperSlide className='room-slide'>
+                <img src={image} alt='' />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
@@ -75,17 +75,11 @@ const Room = ({ title = '', location = '', contains = [], align = '' }) => {
             slidesPerView={1}
             loop
           >
-            <SwiperSlide className='room-slide'>
-              <img src={homeAbout} alt='' />
-            </SwiperSlide>
-
-            <SwiperSlide className='room-slide'>
-              <img src={homeAbout} alt='' />
-            </SwiperSlide>
-
-            <SwiperSlide className='room-slide'>
-              <img src={homeAbout} alt='' />
-            </SwiperSlide>
+            {images.map((image) => (
+              <SwiperSlide className='room-slide'>
+                <img src={image} alt='' />
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
         {/* Room Content */}

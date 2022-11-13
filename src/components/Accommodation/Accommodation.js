@@ -3,6 +3,8 @@ import Room from './Room';
 
 import './Accommodation.css';
 
+import homeAbout from '../../assets/home-about.jpg';
+
 const Accommodation = () => {
   return (
     <div className='accommodation'>
@@ -26,6 +28,7 @@ const Accommodation = () => {
             'Телевизор',
             'Собствен санитарен възел',
           ]}
+          images={[homeAbout, homeAbout, homeAbout, homeAbout]}
         />
 
         {/* Double Room */}
@@ -38,6 +41,7 @@ const Accommodation = () => {
             'Телевизор',
             'Собствен санитарен възел',
           ]}
+          images={[homeAbout, homeAbout, homeAbout, homeAbout]}
           align='reverse'
         />
 
@@ -51,6 +55,7 @@ const Accommodation = () => {
             'Телевизор',
             'Собствен санитарен възел',
           ]}
+          images={[homeAbout, homeAbout, homeAbout]}
         />
       </div>
     </div>

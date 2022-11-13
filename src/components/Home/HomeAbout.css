@@ -17,8 +17,9 @@
 }
 
 .home-about .home-about-cont h2 {
-    font-size: 2.5rem;    
+    font-size: 3rem;    
     color: #9d6556;
+    font-weight: 600;
 }
 
 .home-about .home-about-cont p {
@@ -86,7 +87,7 @@
 .home-about .home-about-right div img {
     width: auto;
     height: 250px;
-    border-radius: 100px;
+    border-radius: 50px;
 }
 
 .home-about .home-about-right div h4 {
