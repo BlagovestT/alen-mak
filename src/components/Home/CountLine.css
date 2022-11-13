@@ -41,6 +41,7 @@
 .countline .countline-right .countline-box p {
     font-size: 6rem;
     font-weight: normal;
+    color: var(--clay);
 }
 
 .countline .countline-right .countline-box span {

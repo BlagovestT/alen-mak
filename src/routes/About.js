@@ -1,11 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Navbar from "../components/Navbar";
-// import MainImage from "../components/MainImage";
-import AboutUs from "../components/AboutUs";
-import Footer from "../components/Footer";
-
-import img from "../assets/hero.jpg";
+import Navbar from '../components/Navbar';
+import AboutUs from '../components/AboutUs/AboutUs';
+import Footer from '../components/Footer';
 
 const About = () => {
   return (

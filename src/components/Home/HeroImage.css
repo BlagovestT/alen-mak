@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     clip-path: polygon(100% 0, 100% 100%, 81% 93%, 54% 100%, 23% 96%, 0 100%, 0 0);
-    margin-bottom: 8rem;
+    margin-bottom: 2rem;
     overflow: hidden;
 }
 

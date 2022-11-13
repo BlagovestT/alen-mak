@@ -1,0 +1,17 @@
+.accommodation {
+    width: 100%;
+    height: auto;
+}
+
+.accommodation-intro {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.accommodation .accommodation-intro h2 {
+    font-weight: normal;
+    font-size: 2rem;
+}

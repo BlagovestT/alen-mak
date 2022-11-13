@@ -1,6 +1,6 @@
 .footer {
     width: 100%;
-    background: #283635;
+    background: var(--deep-forest-green);
 }
 
 .footer-container {
@@ -87,7 +87,7 @@
 .footer-down {
     width: 100%;
     height: 50px;
-    background-color: #121e26;
+    background-color: var(--almost-black);
     overflow: hidden;
 }
 

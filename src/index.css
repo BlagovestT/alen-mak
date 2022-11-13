@@ -1,18 +1,22 @@
-/* Almost black: #121e26
-Deep forest green: #283635
-Light beige: #f4efeb
-Beige: #d2c0b2
-Clay: #9d6556 */
-
 @font-face {
-    font-family: Gotham-Book;
-    src: url("./fonts/Gotham-Book.otf") format("opentype");
-}
+    font-family: 'Montserrat Alternates';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/montserrat-alternates-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./fonts/montserrat-alternates-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./fonts/montserrat-alternates-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./fonts/montserrat-alternates-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./fonts/montserrat-alternates-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  }
 
-@font-face {
-    font-family: Gotham-Bold;
-    src: url("./fonts/Gotham-Bold.otf") format("opentype");
-}
+:root {
+    --almost-black: #121e26;
+    --deep-forest-green: #283635;
+    --light-beige: #f4efeb;
+    --beige: #d2c0b2;
+    --clay: #9d6556;
+  }
 
 * {
     padding: 0;
@@ -21,7 +25,7 @@ Clay: #9d6556 */
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Montserrat Alternates';
 }
 
 ul {
@@ -35,7 +39,7 @@ a {
 .btn {
     width: 215px;
     height: 50px;
-    background-color: #9d6556;
+    background-color: var(--clay);
     color: #fff;
     font-size: 1.1rem;
     text-transform: uppercase;
@@ -46,6 +50,6 @@ a {
 
 .btn:hover {
     background-color: transparent;
-    border: 2px solid #9d6556;
+    border: 2px solid var(--clay);
     color: #000;
 }

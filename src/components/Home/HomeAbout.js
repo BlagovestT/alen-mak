@@ -28,15 +28,15 @@ const HomeAbout = () => {
       <div className='home-about-right'>
         <div>
           <img src={homeAbout} alt=''></img>
-          <h4>Пример Стая 1</h4>
+          <h4>Единична стая</h4>
         </div>
         <div>
           <img src={homeAbout} alt=''></img>
-          <h4>Пример Стая 2</h4>
+          <h4>Двойна стая</h4>
         </div>
         <div>
           <img src={homeAbout} alt=''></img>
-          <h4>Пример Стая 3</h4>
+          <h4>Тройна стая</h4>
         </div>
       </div>
     </div>

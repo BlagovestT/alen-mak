@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import GalleryPage from "../components/Gallery";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import GalleryPage from '../components/Gallery/Gallery';
 
 const Gallery = () => {
   return (

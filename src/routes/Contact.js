@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import ContactUs from "../components/Contact";
-import Map from "../components/Map";
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ContactUs from '../components/Contact/Contact';
+import Map from '../components/Map';
 
 const Contact = () => {
   return (
