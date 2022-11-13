@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import homeAbout from '../../assets/home-about.jpg';
 
@@ -26,18 +27,26 @@ const HomeAbout = () => {
         <button className='btn'>Научи повече</button>
       </div>
       <div className='home-about-right'>
+        <Link to='/accommodation'>
+          <div>
+            <img src={homeAbout} alt=''></img>
+            <h4>Единична стая</h4>
+          </div>
+        </Link>
+
         <div>
-          <img src={homeAbout} alt=''></img>
-          <h4>Единична стая</h4>
+          <Link to='/accommodation'>
+            <img src={homeAbout} alt=''></img>
+            <h4>Двойна стая</h4>
+          </Link>
         </div>
-        <div>
-          <img src={homeAbout} alt=''></img>
-          <h4>Двойна стая</h4>
-        </div>
-        <div>
-          <img src={homeAbout} alt=''></img>
-          <h4>Тройна стая</h4>
-        </div>
+
+        <Link to='/accommodation'>
+          <div>
+            <img src={homeAbout} alt=''></img>
+            <h4>Тройна стая</h4>
+          </div>
+        </Link>
       </div>
     </div>
   );

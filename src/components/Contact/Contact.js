@@ -1,5 +1,4 @@
 import React from 'react';
-import MainImage from '../MainImage';
 
 import {
   FaPhone,
@@ -13,12 +12,11 @@ import './Contact.css';
 const Contact = () => {
   return (
     <div className='contact'>
-      <MainImage title='Контакти' />
-      <div className='contact-us'>
-        <h2>Свържете се с нас</h2>
+      <div className='contact-cont'>
+        <h4>Наши Контакти</h4>
         <div className='icons'>
           <FaSearchLocation size={25} />
-          <p>ул. Катя Папазова, местност Ален мак 3 А, 9007 Chayka, Varna</p>
+          <p>ул. Катя Папазова, местност Ален мак 3 А, 9007 Чайка, Варна</p>
         </div>
         <div className='icons'>
           <FaPhone size={25} /> <p>0893766882</p>
@@ -29,13 +27,21 @@ const Contact = () => {
       </div>
 
       <div className='contact-form'>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, nemo
+          deleniti inventore voluptate reprehenderit exercitationem vitae,
+          officiis ad eveniet quaerat quos doloribus sequi iure perspiciatis
+          explicabo voluptatem nostrum omnis esse.
+        </p>
+
+        <h4>Изпратете ни съобщение</h4>
+
         <form
           target='_blank'
           action='https://formsubmit.co/bgmf1234@gmail.com'
           method='POST'
         >
-          <h2 className='contact-form-h'>Свържете се директно с нас</h2>
-          <label for='First Name'>Име</label>
+          <label for='First Name'>Име*</label>
           <input
             type='text'
             name='First Name'
@@ -44,7 +50,7 @@ const Contact = () => {
             required
           />
 
-          <label for='Family Name'>Фамилия</label>
+          <label for='Family Name'>Фамилия*</label>
           <input
             type='text'
             name='Family Name'
@@ -53,10 +59,10 @@ const Contact = () => {
             required
           />
 
-          <label for='Email'>Имeйл</label>
+          <label for='Email'>Имeйл*</label>
           <input type='email' name='Email' id='' placeholder='Имейл' required />
 
-          <label for='Phone'>Телефон</label>
+          <label for='Phone'>Телефон*</label>
           <input
             type='phone'
             name='Phone'
@@ -65,7 +71,7 @@ const Contact = () => {
             required
           />
 
-          <label for='Massage'>Съобщение</label>
+          <label for='Massage'>Съобщение*</label>
           <textarea
             name='Massage'
             id=''
