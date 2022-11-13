@@ -9,10 +9,6 @@
     flex-wrap: wrap;
 }
 
-.contact .contact-cont {
-
-}
-
 .contact .contact-cont h4 {
     font-size: 3rem;
     margin-bottom: 2rem;
@@ -28,8 +24,12 @@
     margin: 1.5rem 0;
 }
 
-.contact .contact-form {
-
+.contact .contact-cont svg {
+    background-color: var(--beige);
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
 }
 
 .contact .contact-form p {
