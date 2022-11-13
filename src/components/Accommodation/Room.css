@@ -63,3 +63,28 @@
     font-size: 1.2rem;
     font-weight: 400;
 }
+
+/* Swiper */
+.room-swiper {
+    width: 100%;
+    max-width: 600px;
+}
+
+.room-swiper .swiper-button-next {
+    color: #fff;
+}
+
+.room-swiper .swiper-button-prev {
+    color: #fff;
+}
+
+.room-swiper .swiper-pagination span {
+    background-color: #fff;
+}
+
+.room-swiper img {
+    max-width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
