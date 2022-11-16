@@ -4,14 +4,36 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    flex-wrap: wrap;
     padding: 6rem 10px;
     gap: 8rem;
+}
+
+@media (max-width: 680px) {
+    .hospice-services{
+        flex-direction: column;
+    }
 }
 
 .hospice-services .hospice-services-left {
     position: sticky;
     top: 25%;
+}
+
+@media (max-width: 1092px) {
+    .hospice-services .hospice-services-left {
+        top: 15%;
+    }
+}
+
+@media (max-width: 680px) {
+    .hospice-services .hospice-services-left {
+        width: 100%;
+        position:static;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 .hospice-services .hospice-services-left h2 {
@@ -49,6 +71,12 @@
 
 .hospice-services .hospice-services-right .hospice-services-box p {
     font-size: 1.5rem;
+}
+
+@media (max-width: 680px) {
+    .hospice-services .hospice-services-right .hospice-services-box p {
+        font-size: 1.3rem;
+    }
 }
 
 .hospice-services .hospice-services-right .hospice-services-box p>svg {

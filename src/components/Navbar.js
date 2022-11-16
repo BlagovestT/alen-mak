@@ -33,45 +33,45 @@ const Navbar = () => {
   }, []);
 
   return (
-    <div className={color ? 'header header-bg' : 'header'}>
-      <Link to='/'>
+    <div className={color ? 'header-bg' : 'header'}>
+      <Link to="/">
         {/* <h1>Ален Мак</h1> */}
-        <img src={logo} alt='Alen Mak Logo' />
+        <img src={logo} alt="Alen Mak Logo" />
       </Link>
 
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
         <li>
-          <Link to='/' onClick={scrollTop}>
+          <Link to="/" onClick={scrollTop}>
             Начало
           </Link>
         </li>
         <li>
-          <Link to='/about' onClick={scrollTop}>
+          <Link to="/about" onClick={scrollTop}>
             За Нас
           </Link>
         </li>
         <li>
-          <Link to='/accommodation' onClick={scrollTop}>
+          <Link to="/accommodation" onClick={scrollTop}>
             Настаняване
           </Link>
         </li>
         <li>
-          <Link to='/gallery' onClick={scrollTop}>
+          <Link to="/gallery" onClick={scrollTop}>
             Галерия
           </Link>
         </li>
         <li>
-          <Link to='/contact' onClick={scrollTop}>
+          <Link to="/contact" onClick={scrollTop}>
             Контакти
           </Link>
         </li>
       </ul>
 
-      <div className='hamburger' onClick={handleClick}>
+      <div className="hamburger" onClick={handleClick}>
         {click ? (
-          <FaTimes size={30} style={{ color: '#fff' }} />
+          <FaTimes size={30} style={{ color: '#000' }} />
         ) : (
-          <FaBars size={30} style={{ color: '#fff' }} />
+          <FaBars size={30} style={{ color: '#000' }} />
         )}
       </div>
     </div>

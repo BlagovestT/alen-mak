@@ -59,7 +59,12 @@
     justify-content: center;
     align-items: center;
     color: #000;
+    transition: 250ms ease-in-out;
 }
+
+/* .home-about .home-about-right div:hover {
+    transform: scale(1.05);
+} */
 
 .home-about .home-about-right div:nth-child(2) {
     margin: 2rem 0;

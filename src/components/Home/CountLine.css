@@ -7,11 +7,26 @@
     justify-content: space-around;
     flex-wrap: wrap;
     align-items: center;
+    gap: 2rem;
+    padding: 0 1rem;
 } 
+
+@media (max-width: 916px) {
+    .countline {
+        padding: 4rem 1rem;
+    } 
+}
 
 .countline .countline-left h2 {
     font-size: 3.5rem;
     font-weight: normal;
+}
+
+@media (max-width: 916px) {
+    .countline .countline-left h2 {
+        text-align: center;
+        font-size: 2.5rem;
+    }
 }
 
 .countline .countline-right {
@@ -21,12 +36,18 @@
     gap: 8rem;
 }
 
+@media (max-width: 400px) {
+    .countline .countline-right {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
 .countline .countline-right .countline-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
     gap: 2rem;
 }
 
@@ -36,6 +57,13 @@
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
+}
+
+@media (max-width: 400px) {
+    .countline .countline-right .countline-box {
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .countline .countline-right .countline-box p {

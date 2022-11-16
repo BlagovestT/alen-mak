@@ -1,14 +1,4 @@
-@font-face {
-    font-family: 'Montserrat Alternates';
-    font-style: normal;
-    font-weight: 400;
-    src: url('./fonts/montserrat-alternates-v17-latin-regular.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('./fonts/montserrat-alternates-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('./fonts/montserrat-alternates-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('./fonts/montserrat-alternates-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('./fonts/montserrat-alternates-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&family=Oxygen:wght@300;400;700&display=swap');
 
 :root {
     --almost-black: #000000;
@@ -25,7 +15,8 @@
 }
 
 body {
-    font-family: 'Montserrat Alternates';
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Oxygen', sans-serif;
 }
 
 ul {
@@ -46,6 +37,7 @@ a {
     cursor: pointer;
     border: 2px solid transparent;
     transition: 250ms linear;
+    border-radius: 5px;
 }
 
 .btn:hover {
