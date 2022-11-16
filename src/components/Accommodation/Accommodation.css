@@ -1,6 +1,7 @@
 .accommodation {
     width: 100%;
     height: auto;
+    padding: 4rem 0 0 0;
 }
 
 .accommodation-intro {
@@ -14,4 +15,10 @@
 .accommodation .accommodation-intro h2 {
     font-weight: normal;
     font-size: 2rem;
+    text-align: center;
+    padding: 2rem 1rem 4rem 1rem;
+}
+
+.accommodation .room-wrapper {
+    width: 100%;
 }

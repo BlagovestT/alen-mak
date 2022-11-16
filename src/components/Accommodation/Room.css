@@ -8,6 +8,7 @@
     flex-wrap: wrap;
     gap: 12rem;
     padding: 8rem 10px;
+    overflow: hidden;
 }
 
 @media (max-width: 1277px) {
@@ -19,11 +20,13 @@
 .room-bg {
     background-color: var(--beige);
     clip-path: polygon(0 10%, 50% 0, 100% 10%, 100% 90%, 50% 100%, 0 90%);
+    padding: 12rem 10px !important;
 }
 
-@media (max-width: 1149px) {
+@media (max-width: 1187px) {
     .room-bg {
         flex-direction: column-reverse;
+        padding: 12rem 0;
     }
 }
 
@@ -70,6 +73,30 @@
     max-width: 600px;
 }
 
+@media (max-width: 620px) {
+    .room-swiper {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 520px) {
+    .room-swiper {
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 420px) {
+    .room-swiper {
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 320px) {
+    .room-swiper {
+        max-width: 250px;
+    }
+}
+
 .room-swiper .swiper-button-next {
     color: #fff;
 }
@@ -83,7 +110,8 @@
 }
 
 .room-swiper img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 600px;
     height: 400px;
     object-fit: cover;
     border-radius: 10px;

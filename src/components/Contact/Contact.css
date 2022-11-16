@@ -9,6 +9,12 @@
     flex-wrap: wrap;
 }
 
+@media (max-width: 1564px) {
+    .contact {
+        gap: 4rem;
+    }
+}
+
 .contact .contact-cont h4 {
     font-size: 3rem;
     margin-bottom: 2rem;

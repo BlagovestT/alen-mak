@@ -23,22 +23,30 @@ const GalleryPage = () => {
     <div className='gallery'>
       <MainImage title='Галерия' />
 
-      <div className='gallery-cont'>
-        <ImageBox img={homeAbout} size='small' />
-        <ImageBox img={photoone} size='small' />
-        <ImageBox img={phototwo} size='small' />
+      <div class='image-grid'>
+        <div class='image-row'>
+          <ImageBox img={homeAbout} size='02' />
+          <ImageBox img={photoone} size='02' />
+          <ImageBox img={phototwo} size='03' />
+        </div>
 
-        <ImageBox img={photothree} size='small' />
-        <ImageBox img={photofour} size='small' />
-        <ImageBox img={photofive} size='small' />
+        <div class='image-row'>
+          <ImageBox img={photothree} size='02' />
+          <ImageBox img={photofour} size='03' />
+          <ImageBox img={photofive} size='02' />
+        </div>
 
-        <ImageBox img={photosix} size='small' />
-        <ImageBox img={phototwelve} size='small' />
-        <ImageBox img={photoeight} size='small' />
+        <div class='image-row'>
+          <ImageBox img={photosix} size='01' />
+          <ImageBox img={photoeight} size='02' />
+          <ImageBox img={photonine} size='01' />
+        </div>
 
-        <ImageBox img={photonine} size='small' />
-        <ImageBox img={phototen} size='small' />
-        <ImageBox img={photoeleven} size='small' />
+        <div class='image-row'>
+          <ImageBox img={phototen} size='01' />
+          <ImageBox img={photoeleven} size='01' />
+          <ImageBox img={phototwelve} size='01' />
+        </div>
       </div>
     </div>
   );

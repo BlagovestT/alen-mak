@@ -1,11 +1,25 @@
-import React from "react";
+import React, { useState } from 'react';
 
-import "./ImageBox.css";
+import './ImageBox.css';
 
 const ImageBox = ({ img, size }) => {
+  const [opened, setOpened] = useState(false);
+
   return (
-    <div className="gallery-box">
-      <img src={img} className={size} alt="" />
+    <div
+      class={'image image-' + size}
+      style={{ backgroundImage: 'url(' + img + ')' }}
+      onClick={() => setOpened(!opened)}
+    >
+      <div
+        className='image-popup'
+        style={opened ? { display: 'flex' } : { display: 'none' }}
+      >
+        <div className='image-popup-cont'>
+          <p>X</p>
+          <img src={img} alt='' />
+        </div>
+      </div>
     </div>
   );
 };
