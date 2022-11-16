@@ -13,6 +13,7 @@
     align-items: center;
     z-index: 5;
     overflow: hidden;
+    margin-bottom: 8rem;
 }
 
 .about-us-hero:after {
@@ -145,77 +146,51 @@
     100% {height: 80vh; width: 700px; right: calc(calc(100vw - 1200px) / 2);}
 }
 
-/* About Us Info */
-.about-us-info {
+/* about us section */
+
+.about-section {
     width: 100%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 8rem 0;
-    overflow: hidden;
+    margin-top: 8rem;
 }
 
-.about-us-info .about-us-img img {
-    width: 800px;
-    height: auto;
-}
-
-.about-us-info .about-us-cont {
+.about-section .about-section-left {
+    max-width: 50vw;
     width: 100%;
-    height: 400px;
-    background-color: #fff;
+    height: 800px;
+    background-image: url("../../assets/hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    
+}
+
+.about-section .about-section-right {
+    width: 100%;
+    height: 450px;
     display: flex;
     flex-direction: column;
-    padding: 5rem;
-    text-align: left;
     justify-content: center;
-    transform: translateX(-150px);
-    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    align-items: flex-start;
+    background-color: var(--clay);
+    padding: 16rem 5rem;
+    color: #fff;
+    transform: translateX(-100px);
+    border-radius: 5px;
+    
 }
 
-.about-us-info .about-us-cont h2 {
-    margin-bottom: 1rem;
-    font-size: 2rem;
+.about-section .about-section-right h4 {
+    margin-bottom: 3rem;
+    font-size: 3rem;
 }
 
-.about-us-info .about-us-cont p {
-    line-height: 1.5;
-    text-align: justify;
-}
-
-@media (max-width: 1250px) {
-    .about-us-info {
-        margin: 2rem 0;
-    }
-
-    .about-us-info .about-us-img img {
-        width: 100%;
-        height: 70vh;
-        object-fit: cover;
-    }
-
-    .about-us-info {
-        display: block;
-    }
-
-    .about-us-info .about-us-cont {
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-        transform: translateY(-100px);
-        text-align: center;
-    }
-}
-
-@media (max-width: 700px) {
-    .about-us-info .about-us-cont {
-        padding: 2rem;
-    }
-}
-
-@media (max-width: 500px) {
-    .about-us-info .about-us-cont {
-        width: 95%;
-    }
+.about-section .about-section-right p {
+    font-size: 1.2rem;
+    max-width: 800px;
 }
