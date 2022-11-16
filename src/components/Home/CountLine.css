@@ -19,7 +19,7 @@
 
 .countline .countline-left h2 {
     font-size: 3.5rem;
-    font-weight: normal;
+    font-weight: 600;
 }
 
 @media (max-width: 916px) {
@@ -78,6 +78,7 @@
     font-size: 6rem;
     font-weight: normal;
     color: var(--clay);
+    font-weight: 600;
 }
 
 .countline .countline-right .countline-box span {
