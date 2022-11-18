@@ -31,19 +31,32 @@
     font-size: 6rem;
     margin-bottom: 2rem;
     color: #fff;
+    /* animation: 1s fadeInSlideUp ease-in-out; */
 }
 
 .hero .hero-cont p {
     font-size: 2.5rem;
     color: #fff;
+    /* animation: 1s fadeInSlideUp ease-in-out; */
 }
 
 .hero .hero-cont a .btn {
     margin: 2rem 0;
+    /* animation: 1s fadeInSlideUp ease-in-out; */
 }
 
 .hero .hero-cont a .btn:hover {
     color: #fff !important;
     background-color: var(--clay);
     transform: translateY(-5px);
+}
+
+@media (max-width: 470px) {
+    .hero .hero-cont h2 {
+        font-size: 3rem;
+    }
+
+    .hero .hero-cont p {
+        font-size: 1.5rem;
+    }
 }

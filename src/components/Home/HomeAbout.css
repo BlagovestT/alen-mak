@@ -27,6 +27,16 @@
     margin: 2rem 0 5rem 0;
 }
 
+@media (max-width: 1823px) {
+    .home-about .home-about-cont p {
+        max-width: 1200px;
+        width: 100%;
+        font-size: 1.4rem;
+        text-align: center;
+        margin: 2rem auto 5rem auto;
+    }
+}
+
 .home-about .home-about-cont button {
     padding: 12px 36px;
 }
@@ -97,7 +107,7 @@
 
 .home-about .home-about-right div h4 {
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: normal;
     margin-top: 1rem;
 }
 

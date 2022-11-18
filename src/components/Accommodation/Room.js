@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { FaCheckCircle } from 'react-icons/fa';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
@@ -19,12 +21,16 @@ const Room = ({
   images = [],
   align = '',
 }) => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
   // Check if reversed
   if (align === 'reverse') {
     return (
-      <div className='room room-bg'>
+      <div className="room room-bg" data-aos="fade">
         {/* Room Content */}
-        <div className='room-cont'>
+        <div className="room-cont">
           {/* Title */}
           <h4>{title}</h4>
           {/* Location */}
@@ -40,9 +46,9 @@ const Room = ({
           </ul>
         </div>
         {/* Room Image */}
-        <div className='room-img'>
+        <div className="room-img" data-aos="fade-left">
           <Swiper
-            className='room-swiper'
+            className="room-swiper"
             modules={[Navigation, EffectFade, Pagination]}
             navigation
             pagination={{ clickable: true }}
@@ -52,8 +58,8 @@ const Room = ({
             loop
           >
             {images.map((image) => (
-              <SwiperSlide className='room-slide'>
-                <img src={image} alt='' />
+              <SwiperSlide className="room-slide">
+                <img src={image} alt="" />
               </SwiperSlide>
             ))}
           </Swiper>
@@ -62,11 +68,11 @@ const Room = ({
     );
   } else {
     return (
-      <div className='room'>
+      <div className="room">
         {/* Room Image */}
-        <div className='room-img'>
+        <div className="room-img" data-aos="fade-right">
           <Swiper
-            className='room-swiper'
+            className="room-swiper"
             modules={[Navigation, EffectFade, Pagination]}
             navigation
             pagination={{ clickable: true }}
@@ -76,14 +82,14 @@ const Room = ({
             loop
           >
             {images.map((image) => (
-              <SwiperSlide className='room-slide'>
-                <img src={image} alt='' />
+              <SwiperSlide className="room-slide">
+                <img src={image} alt="" />
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
         {/* Room Content */}
-        <div className='room-cont'>
+        <div className="room-cont" data-aos="fade">
           {/* Title */}
           <h4>{title}</h4>
           {/* Location */}
