@@ -95,3 +95,12 @@
     color: #fff;
     text-align: center;
 }
+
+.footer-down p span a {
+    color: var(--beige);
+    transition: 150ms ease-in-out;
+}
+
+.footer-down p span a:hover {
+    color: var(--clay);
+}

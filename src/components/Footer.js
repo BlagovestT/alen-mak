@@ -56,7 +56,15 @@ const Footer = () => {
       </div>
 
       <div className='footer-down'>
-        <p>Ален Мак © 2022</p>
+        <p>
+          Ален Мак © 2022 |{' '}
+          <span>
+            Created by{' '}
+            <a href='https://obelussoft.com' target='_blank'>
+              ObelusSoft
+            </a>
+          </span>
+        </p>
       </div>
     </div>
   );
