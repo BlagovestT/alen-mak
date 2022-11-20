@@ -15,7 +15,7 @@ const HeroImage = () => {
     <div className='hero'>
       <div className='hero-cont'>
         <h2 data-aos='fade-up'>Ален Мак</h2>
-        <p data-aos='fade-up'>Заповядайте в нашия хоспис</p>
+        <p data-aos='fade-up'>Дом за настаняване и грижа</p>
         <Link to='/contact' onClick={scrollTop} data-aos='fade-up'>
           <button className='btn'>Свържете се с нас</button>
         </Link>

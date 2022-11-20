@@ -215,13 +215,19 @@
 }
  
 .about-section .about-section-right h4 {
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
     font-size: 3rem;
 }
  
 .about-section .about-section-right p {
     font-size: 1.2rem;
     max-width: 800px;
+}
+
+@media (max-width: 1373px) {
+    .about-section .about-section-right p {
+        font-size: 1.1rem;
+    }
 }
  
 @media (max-width: 1322px) {

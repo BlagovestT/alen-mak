@@ -1,5 +1,16 @@
 import React, { useEffect } from 'react';
-import { FaCamera } from 'react-icons/fa';
+import {
+  FaCamera,
+  FaHeartbeat,
+  FaUserMd,
+  FaHandHoldingWater,
+  FaLuggageCart,
+  FaHandHoldingMedical,
+  FaNotesMedical,
+  FaPalette,
+  FaMusic,
+  FaHandsHelping,
+} from 'react-icons/fa';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
@@ -13,82 +24,80 @@ const HospiceServices = () => {
   }, []);
 
   return (
-    <div className="hospice-services">
-      <div className="hospice-services-left">
-        <h2 data-aos="fade">Хоспис Ален Мак</h2>
-        <p data-aos="fade">Подзаглавие</p>
-        <img data-aos="fade-up" src={homeAbout} alt="" />
+    <div className='hospice-services'>
+      <div className='hospice-services-left'>
+        <h2 data-aos='fade'>Хоспис Ален Мак</h2>
+        <p data-aos='fade'>Подзаглавие</p>
+        <img data-aos='fade-up' src={homeAbout} alt='' />
       </div>
-      <div className="hospice-services-right">
-        <div className="hospice-services-box" data-aos="fade">
+      <div className='hospice-services-right'>
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
             <FaCamera />
           </p>
           <p>24/7 видеонаблюдение</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaUserMd />
           </p>
-          <p>Система за повикване на персонала от пациента</p>
+          <p>Прегледи от специалисти</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaHeartbeat />
           </p>
-          <p>
-            24/7 медицинско обслужване и наблюдение, сестрински грижи и
-            санитарна помощ
-          </p>
+          <p>Медицинско наблюдение</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaHandHoldingWater />
           </p>
-          <p>24/7 видеонаблюдение</p>
+          <p>24 часово санитарно-битово обслужване и наблюдение</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaHandHoldingMedical />
           </p>
-          <p>Система за повикване на персонала от пациента</p>
+          <p>Рехабилитация</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaNotesMedical />
           </p>
-          <p>
-            24/7 медицинско обслужване и наблюдение, сестрински грижи и
-            санитарна помощ
-          </p>
-        </div>
-        <div className="hospice-services-box" data-aos="fade">
-          <p>
-            <FaCamera />
-          </p>
-          <p>24/7 видеонаблюдение</p>
+          <p>Профилактични прегледи и изледвания</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaLuggageCart />
           </p>
-          <p>Система за повикване на персонала от пациента</p>
+          <p>Екскурзии и посещения на културни събития.</p>
         </div>
 
-        <div className="hospice-services-box" data-aos="fade">
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            <FaCamera />
+            <FaPalette />
           </p>
+          <p>Арт-терапия</p>
+        </div>
+        <div className='hospice-services-box' data-aos='fade'>
           <p>
-            24/7 медицинско обслужване и наблюдение, сестрински грижи и
-            санитарна помощ
+            <FaMusic />
           </p>
+          <p>Музико-терапия</p>
+        </div>
+
+        <div className='hospice-services-box' data-aos='fade'>
+          <p>
+            <FaHandsHelping />
+          </p>
+          <p>Трудо-терапия</p>
         </div>
       </div>
     </div>

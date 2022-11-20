@@ -26,9 +26,9 @@
     width: 100%;
     max-width: 650px;
     height: 100%;
-    display: flex;
+    display: flex;           
     flex-direction: column;
-    padding: 1rem;
+    padding: 1.2rem;
 }
 
 .footer .footer-container .left .social a {
