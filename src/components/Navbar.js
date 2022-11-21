@@ -5,7 +5,8 @@ import { scrollTop } from '../utils/scrollTop';
 
 import './Navbar.css';
 
-import logo from '../assets/logo.png';
+import logo from '../assets/alen-mak-logo.png';
+import logoText from '../assets/alen-mak-logo-text.png';
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -36,7 +37,11 @@ const Navbar = () => {
     <div className={color ? 'header-bg' : 'header'}>
       <Link to="/">
         {/* <h1>Ален Мак</h1> */}
-        <img src={logo} alt="Alen Mak Logo" />
+        {color ? (
+          <img src={logoText} alt="Alen Mak Logo" />
+        ) : (
+          <img src={logo} alt="Alen Mak Logo" />
+        )}
       </Link>
 
       <ul className={click ? 'nav-menu active' : 'nav-menu'}>
@@ -68,11 +73,17 @@ const Navbar = () => {
       </ul>
 
       <div className="hamburger" onClick={handleClick}>
-        {click ? (
-          <FaTimes size={30} style={{ color: '#fff' }} />
-        ) : (
-          <FaBars size={30} style={{ color: '#fff' }} />
-        )}
+        {(() => {
+          if (click) {
+            return <FaTimes size={30} style={{ color: '#fff' }} />;
+          } else {
+            if (color) {
+              return <FaBars size={30} style={{ color: '#000' }} />;
+            } else {
+              return <FaBars size={30} style={{ color: '#fff' }} />;
+            }
+          }
+        })()}
       </div>
     </div>
   );

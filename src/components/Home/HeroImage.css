@@ -14,6 +14,12 @@
     overflow: hidden;
 }
 
+@media (max-width: 700px) {
+    .hero {
+        background-attachment: unset;
+    }
+}
+
 .hero .hero-cont {
     width: 100%;
     max-width: 1280px;
