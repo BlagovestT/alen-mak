@@ -38,7 +38,7 @@ const Footer = () => {
           <div className='location'>
             <FaSearchLocation size={30} style={{ marginRight: '2rem' }} />
             <div>
-              <p>Катя Папазова 3-А, 9000</p>
+              <p>Катя Папазова 3-А, 9007</p>
               <h4>Варна, България</h4>
             </div>
           </div>

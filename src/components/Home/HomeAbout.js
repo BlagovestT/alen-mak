@@ -23,9 +23,11 @@ const HomeAbout = () => {
           реновирана, с прекрасна панорама към морето. Около нея е оформена
           паркова зона от 1000 кв.м. с обособени зони за разходки и отдих.
         </p>
-        <button className='btn' data-aos='slide-right'>
-          Научи повече
-        </button>
+        <Link to='/about' onClick={scrollTop} data-aos='fade-up'>
+          <button className='btn' data-aos='slide-right'>
+            Научи повече
+          </button>
+        </Link>
       </div>
       <div className='home-about-right'>
         <Link to='/accommodation' onClick={scrollTop} data-aos='zoom-in-up'>

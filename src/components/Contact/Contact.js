@@ -17,7 +17,7 @@ const Contact = () => {
         <h4>Наши Контакти</h4>
         <div className='icons'>
           <FaSearchLocation size={25} />
-          <p>ул. Катя Папазова, местност Ален мак 3 А, 9007 Чайка, Варна</p>
+          <p>ул. Катя Папазова 3-A, местност Ален Mак, 9007 K.K.Чайка, Варна</p>
         </div>
         <div className='icons'>
           <FaPhone size={25} /> <p>0893766882</p>
@@ -38,13 +38,6 @@ const Contact = () => {
       </div>
 
       <div className='contact-form' data-aos='fade'>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus, nemo
-          deleniti inventore voluptate reprehenderit exercitationem vitae,
-          officiis ad eveniet quaerat quos doloribus sequi iure perspiciatis
-          explicabo voluptatem nostrum omnis esse.
-        </p>
-
         <h4>Изпратете ни съобщение</h4>
 
         <form
