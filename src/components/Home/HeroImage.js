@@ -14,7 +14,7 @@ const HeroImage = () => {
 
   return (
     <div className='hero'>
-      <video src={video} loop muted autoPlay preload='auto'></video>
+      <video src={video} loop muted autoPlay preload='auto' playsInline></video>
       <div className='hero-cont'>
         <h2 data-aos='fade-up'>Ален Мак</h2>
         <p data-aos='fade-up'>Дом за настаняване и грижа</p>
