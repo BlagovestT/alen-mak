@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 
 import './Accommodation.css';
 
-import homeAbout from '../../assets/home-about.jpg';
+import { imge } from '../../utils/imgs';
 
 const Accommodation = () => {
   useEffect(() => {
@@ -34,7 +34,7 @@ const Accommodation = () => {
             'Рехабилитация три пъти седмично',
             'Социални услуги',
           ]}
-          images={[homeAbout, homeAbout, homeAbout, homeAbout]}
+          images={[imge.IMG_5737, imge.IMG_5735, imge.IMG_5740]}
         />
 
         {/* Double Room */}
@@ -47,7 +47,7 @@ const Accommodation = () => {
             'Рехабилитация три пъти седмично',
             'Социални услуги',
           ]}
-          images={[homeAbout, homeAbout, homeAbout, homeAbout]}
+          images={[imge.photosix]}
           align='reverse'
         />
 
@@ -61,7 +61,7 @@ const Accommodation = () => {
             'Рехабилитация три пъти седмично',
             'Социални услуги',
           ]}
-          images={[homeAbout, homeAbout, homeAbout]}
+          images={[imge.photofive]}
         />
       </div>
     </div>

@@ -4,7 +4,7 @@ import { scrollTop } from '../../utils/scrollTop';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 
-import homeAbout from '../../assets/home-about.jpg';
+import { imge } from '../../utils/imgs';
 
 import './HomeAbout.css';
 
@@ -32,7 +32,7 @@ const HomeAbout = () => {
       <div className='home-about-right'>
         <Link to='/accommodation' onClick={scrollTop} data-aos='zoom-in-up'>
           <div>
-            <img src={homeAbout} alt=''></img>
+            <img src={imge.IMG_5737} alt=''></img>
             <h4>Единична стая</h4>
           </div>
         </Link>
@@ -44,7 +44,7 @@ const HomeAbout = () => {
             data-aos='zoom-in-up'
             data-aos-delay='400'
           >
-            <img src={homeAbout} alt=''></img>
+            <img src={imge.photofive} alt=''></img>
             <h4>Двойна стая</h4>
           </Link>
         </div>
@@ -56,7 +56,7 @@ const HomeAbout = () => {
           data-aos-delay='800'
         >
           <div>
-            <img src={homeAbout} alt=''></img>
+            <img src={imge.photosix} alt=''></img>
             <h4>Тройна стая</h4>
           </div>
         </Link>

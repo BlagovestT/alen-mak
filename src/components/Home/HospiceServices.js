@@ -26,8 +26,8 @@ const HospiceServices = () => {
   return (
     <div className='hospice-services'>
       <div className='hospice-services-left'>
-        <h2 data-aos='fade'>Хоспис Ален Мак</h2>
-        <p data-aos='fade'>Подзаглавие</p>
+        <h2 data-aos='fade'>Ален Мак</h2>
+        <p data-aos='fade'>Дом за настаняване и грижа</p>
         <img data-aos='fade-up' src={homeAbout} alt='' />
       </div>
       <div className='hospice-services-right'>
