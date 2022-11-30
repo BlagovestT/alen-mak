@@ -44,7 +44,7 @@ const HomeAbout = () => {
             data-aos='zoom-in-up'
             data-aos-delay='400'
           >
-            <img src={imge.photofive} alt=''></img>
+            <img src={imge.photosix} alt=''></img>
             <h4>Двойна стая</h4>
           </Link>
         </div>
@@ -56,7 +56,7 @@ const HomeAbout = () => {
           data-aos-delay='800'
         >
           <div>
-            <img src={imge.photosix} alt=''></img>
+            <img src={imge.photofive} alt=''></img>
             <h4>Тройна стая</h4>
           </div>
         </Link>
