@@ -39,7 +39,9 @@
 }
 
 .image-popup .image-popup-cont img {
+    width: auto;
     max-width: 100%;
-    height: auto;
+    height: 80vh;
     object-fit: cover;
+    border-radius: 5px;
 }
