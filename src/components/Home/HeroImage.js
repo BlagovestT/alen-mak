@@ -14,13 +14,7 @@ const HeroImage = () => {
 
   return (
     <div className='hero'>
-      <video
-        src='https://drive.google.com/file/d/1N8dGMvqCZkUOsPR4DBfZEBPGaHx4TciI/preview'
-        loop
-        muted
-        autoPlay
-        preload='auto'
-      ></video>
+      <video src={video} loop muted autoPlay preload='auto'></video>
       <div className='hero-cont'>
         <h2 data-aos='fade-up'>Ален Мак</h2>
         <p data-aos='fade-up'>Дом за настаняване и грижа</p>

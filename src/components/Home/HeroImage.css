@@ -11,7 +11,14 @@
     align-items: center;
     clip-path: polygon(100% 0, 100% 100%, 81% 93%, 54% 100%, 23% 96%, 0 100%, 0 0);
     margin-bottom: 2rem;
+    position: relative;
     overflow: hidden;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    filter: brightness(85%);
 }
 
 @media (max-width: 700px) {
