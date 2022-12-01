@@ -17,7 +17,7 @@ const Accommodation = () => {
       <div className='accommodation-intro'>
         {/* Main Title */}
         <h2 data-aos='fade-left'>
-          Резиденция „Ален Мак“ разполага с 60 единични стаи, 60 двойни стаи, 60
+          Резиденция „Ален Мак“ разполага с 6 единични стаи, 29 двойни стаи, 11
           тройни стаи.
         </h2>
       </div>

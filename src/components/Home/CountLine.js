@@ -21,37 +21,37 @@ const CountLine = () => {
   }, []);
 
   return (
-    <div className="countline">
-      <div className="countline-left">
-        <h2 data-aos="fade-down">Стаи на разположение</h2>
-        <h2 data-aos="fade-up">Ален Мак</h2>
+    <div className='countline'>
+      <div className='countline-left'>
+        <h2 data-aos='fade-down'>Стаи на разположение</h2>
+        <h2 data-aos='fade-up'>Ален Мак</h2>
       </div>
-      <div className="countline-right">
-        <div className="countline-wrapper">
-          <div className="countline-box" data-aos="fade" data-aos-delay="300">
+      <div className='countline-right'>
+        <div className='countline-wrapper'>
+          <div className='countline-box' data-aos='fade' data-aos-delay='300'>
             <p>
-              <Number n={60} delay={300} />
+              <Number n={46} delay={300} />
             </p>
             <span>Общо Стаи</span>
           </div>
-          <div className="countline-box" data-aos="fade" data-aos-delay="900">
+          <div className='countline-box' data-aos='fade' data-aos-delay='900'>
             <p>
-              <Number n={60} delay={900} />
+              <Number n={6} delay={900} />
             </p>
             <span>Единични Стаи</span>
           </div>
         </div>
 
-        <div className="countline-wrapper">
-          <div className="countline-box" data-aos="fade" data-aos-delay="600">
+        <div className='countline-wrapper'>
+          <div className='countline-box' data-aos='fade' data-aos-delay='600'>
             <p>
-              <Number n={60} delay={600} />
+              <Number n={29} delay={600} />
             </p>
             <span>Двойни Стаи</span>
           </div>
-          <div className="countline-box" data-aos="fade" data-aos-delay="1200">
+          <div className='countline-box' data-aos='fade' data-aos-delay='1200'>
             <p>
-              <Number n={60} delay={1200} />
+              <Number n={11} delay={1200} />
             </p>
             <span>Тройни Стаи</span>
           </div>
