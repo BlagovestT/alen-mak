@@ -20,7 +20,7 @@ const Contact = () => {
           <p>ул. Катя Папазова 3-A, местност Ален Mак, 9007 K.K.Чайка, Варна</p>
         </div>
         <div className='icons'>
-          <FaPhone size={25} /> <p>0893766882</p>
+          <FaPhone size={25} /> <p>0879017766</p>
         </div>
         <div className='icons'>
           <FaMailBulk size={25} /> <p>alenmakmedical@abv.bg</p>
