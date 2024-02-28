@@ -10,6 +10,8 @@ import {
   FaPalette,
   FaMusic,
   FaHandsHelping,
+  FaHands,
+  FaIdCardAlt,
 } from 'react-icons/fa';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -98,6 +100,20 @@ const HospiceServices = () => {
             <FaHandsHelping />
           </p>
           <p>Трудо-терапия</p>
+        </div>
+
+        <div className='hospice-services-box' data-aos='fade'>
+          <p>
+            <FaHands />
+          </p>
+          <p>Безплатни помощни средства за хора с увреждания</p>
+        </div>
+
+        <div className='hospice-services-box' data-aos='fade'>
+          <p>
+            <FaIdCardAlt />
+          </p>
+          <p>Псигологична оценка за ТЕЛК</p>
         </div>
       </div>
     </div>
