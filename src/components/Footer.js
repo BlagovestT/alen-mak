@@ -61,7 +61,7 @@ const Footer = () => {
           <span>
             Created by{" "}
             <a href="https://siscogroup.org" target="_blank">
-              SiscoGroup
+              Siscogroup
             </a>
           </span>
         </p>
